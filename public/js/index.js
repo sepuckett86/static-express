@@ -7,7 +7,7 @@ fetch('/api/v1/colors')
     colors.forEach(color => {
       const li = document.createElement('li');
       const a = document.createElement('a');
-      a.href = `/colors?${color.name}`;
+      a.href = `/colors/?color=${color.name}`;
       a.textContent = color.name;
       li.appendChild(a);
       ul.appendChild(li);
